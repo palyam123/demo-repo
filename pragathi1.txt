@@ -1,5 +1,9 @@
 Welcome to Devops Course 
 day1 Aws 
 Day2 aws2
-day 30 Azure
+day 30 Azure  
+ansible is over
+teraform is over
+and kubernetes is over
+prometheus and grafana  
 
