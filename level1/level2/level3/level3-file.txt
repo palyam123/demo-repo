@@ -1,0 +1,19 @@
+5. Recursive Staging
+
+You do NOT add files one by one in real projects.
+
+git add .
+
+
+Stages:
+
+All files
+
+All folders
+
+All subfolders
+
+Example
+
+git add .
+git commit -m "Added project structure"

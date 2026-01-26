@@ -1,0 +1,54 @@
+3. Undoing Mistakes (BEFORE COMMIT)
+
+This is where most beginners panic.
+
+A. Unstage a file (keep changes)
+git reset HEAD file.txt
+
+
+Example 1
+
+git add file.txt
+git reset HEAD file.txt
+
+
+Result
+
+File goes back to working directory
+
+Changes are NOT lost
+
+Example 2
+
+git reset
+
+
+➡ Unstages everything
+
+B. Discard changes completely (DANGEROUS)
+git checkout -- file.txt
+
+
+Example 1
+
+nano file.txt
+git checkout -- file.txt
+
+
+➡ File restored to last commit
+
+Example 2
+
+git checkout -- .
+
+
+➡ Discards ALL uncommitted changes
+
+⚠ This is irreversible
+
+C. Full restore workflow (from class)
+git reset HEAD file.txt
+git checkout -- file.txt
+
+
+➡ File goes back to exact previous committed state

@@ -1,0 +1,12 @@
+4. Directory Creation (mkdir -p)
+
+Creates parent + subdirectories in one command.
+
+Example 1
+
+mkdir -p level1/level2/level3
+
+
+Example 2
+
+mkdir -p src/main/java
