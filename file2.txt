@@ -1,0 +1,33 @@
+🔹 Staging Area vs Commit Area
+git diff --staged
+
+
+Shows:
+
+What will go into next commit
+
+Example 1
+
+git add file.txt
+git diff --staged
+
+
+Example 2
+Verify before committing critical code
+
+🔹 Working Area vs Commit Area
+git diff HEAD
+
+
+Shows:
+
+All changes since last commit
+
+🔹 Diff for Specific File
+git diff filename.txt
+
+
+Example
+
+git diff app.js
+
