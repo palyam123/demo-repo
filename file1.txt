@@ -2,4 +2,10 @@ Welcome to git
 hloo
 next github
 
+
 After git its may be terrafprm
+from collections import Counter
+def are_anagrams(s1: str, s2: str) -> bool:
+   return Counter(s1) == Counter(s2)
+print(are_anagrams("anagram", "nagaram")) # True
+print(are_anagrams("hello", "bello")) # False
