@@ -1,0 +1,41 @@
+#Bubble sort
+# Bubble Sort implementation in Python with input validation
+
+def bubble_sort(arr):
+    """
+    Sorts a list in ascending order using the Bubble Sort algorithm.
+    Time Complexity: O(n^2) in worst case.
+    """
+    n = len(arr)
+    for i in range(n):
+        swapped = False  # Optimization: stop if no swaps in a pass
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]  # Swap
+                swapped = True
+        if not swapped:
+            break  # List is already sorted
+    return arr
+
+
+def get_numbers_from_user():
+    """
+    Reads a list of integers from user input.
+    Handles invalid inputs gracefully.
+    """
+    try:
+        raw_input = input("Enter numbers separated by spaces: ").strip()
+        if not raw_input:
+            print("No numbers entered. Exiting.")
+            exit(1)
+        return [int(x) for x in raw_input.split()]
+    except ValueError:
+        print("Invalid input. Please enter integers only.")
+        exit(1)
+
+
+if __name__ == "__main__":
+    numbers = get_numbers_from_user()
+    sorted_numbers = bubble_sort(numbers)
+    print("Sorted list:", sorted_numbers)
+ 
