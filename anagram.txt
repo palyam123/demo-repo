@@ -8,5 +8,5 @@ print(are_anagrams("rat", "car")) # False
 its tested file 
 =======
 anargarm means 121 when it reverse it also a 121 so its anagram 
->>>>>>> branch3
+>>>>>>> branch3 code
 
