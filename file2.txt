@@ -28,6 +28,6 @@ git diff filename.txt
 
 
 Example
-
+git is  moe powerfull
 git diff app.js
 
