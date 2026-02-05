@@ -38,4 +38,7 @@ if __name__ == "__main__":
     numbers = get_numbers_from_user()
     sorted_numbers = bubble_sort(numbers)
     print("Sorted list:", sorted_numbers)
+
+
+// code is writen in python 
  
